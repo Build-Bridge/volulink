@@ -4,7 +4,7 @@ import AvatarWithUsername from '../Reusables/AvatarWithUsername'
 
 const Nav = () => {
   return (
-   <nav className='flex items-center justify-between py-2 px-3'>
+   <nav className='flex items-center justify-between py-2 px-3 bg-white'>
     <div>
       <h1 className='font-semibold text-[24px] leading-[30px] capitalize'>volulink</h1>
     </div>

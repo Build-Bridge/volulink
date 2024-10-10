@@ -8,15 +8,15 @@ interface AuthLayoutProps {
 
 const AuthLayout: React.FC<AuthLayoutProps> = ({children}) => {
   return (
-    <section>
-      <div>
+    <section className='relative'>
+      <div className='sticky top-0'>
         <Nav/>
       </div>
-      <div className='grid grid-cols-2 w-full gap-5'>
-        <div className='min-h-dvh w-full'>
+      <div className='grid grid-cols-2 w-full gap-5 min-h-dvh'>
+        <div className='h-full w-full'>
           <Image className='h-full w-full object-cover' src={'/img/auth_img.svg'} alt="auth" priority width={100} height={100} />
         </div>
-        <div>
+        <div className='w-full h-full'>
           {children}
         </div>
       </div>
