@@ -1,9 +1,9 @@
-import ControlledSearch from "@/components/Reusables/ControlledSearch";
+import ControlledInput from "@/components/Reusables/ControlledInput";
 
 export default function Home() {
   return (
    <>
-   <ControlledSearch/>
+   <ControlledInput/>
    </>
   );
 }
