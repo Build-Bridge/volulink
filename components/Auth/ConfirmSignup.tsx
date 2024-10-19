@@ -10,9 +10,10 @@ const ConfirmSignup = () => {
   // const { returnToPrevious } = useReturn();
 
   return (
-    <div className="w-full max-w-[430px] mx-auto py-10">
+    <div className="w-full md:max-w-[430px] mx-auto py-10">
       <div>
         <IoMdArrowBack
+        className="cursor-pointer"
           onClick={() => {
             router.back()
           }}
@@ -20,7 +21,7 @@ const ConfirmSignup = () => {
         />
       </div>
 
-      <div>
+      <div className="w-full my-5">
         <h1 className="font-medium text-[32px] leading -[40px]">
           Which are you?
         </h1>

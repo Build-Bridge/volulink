@@ -1,15 +1,13 @@
 'use client'
-import React from "react";
-import { IoMdArrowBack } from "react-icons/io";
-import ControlledInput from "../Reusables/ControlledInput";
-import AuthButton from "../Reusables/AuthButton";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-// import {useReturn} from "../hooks/useReturn";
+import { useRouter } from 'next/navigation'
+import React from 'react'
+import { IoMdArrowBack } from 'react-icons/io'
+import ControlledInput from '../Reusables/ControlledInput'
+import AuthButton from '../Reusables/AuthButton'
+import Link from 'next/link'
 
-const Signup = () => {
-  const router = useRouter()
-  // const { returnToPrevious } = useReturn();
+const Login = () => {
+    const router = useRouter()
   return (
     <div className="w-full md:max-w-[430px] mx-auto py-10">
       <div>
@@ -23,11 +21,10 @@ const Signup = () => {
       </div>
       <div className="my-5 w-full">
         <h1 className="font-medium text-[32px] leading-[40px] my-2">
-          Let&apos;s get started
+         Welcome back
         </h1>
         <p className="text-[#00030AA3] text-[14px] leading-[21px]">
-          Are you a volunteer looking for oppurtunities? you are just one click
-          away.
+        Let&apos;s see the opportunity that awaits you in just one click.
         </p>
 
         <form autoComplete="off" className="my-5 space-y-5 w-full">
@@ -41,11 +38,8 @@ const Signup = () => {
             <ControlledInput type="password" placeholder="Password" />
           </div>
           <div>
-            <ControlledInput type="password" placeholder="Confirm Password" />
-          </div>
-          <div>
             <AuthButton
-              text="Sign up"
+              text="Log in"
               bgColor="bg-black"
               textColor="text-white"
             />
@@ -73,14 +67,14 @@ const Signup = () => {
         <div className="w-full flex items-center  justify-center">
           <small className="text-[12px] leading-3 text-center">
             Already have an account?{" "}
-            <Link className="text-blue-800" href={"/auth/login"}>
-              Log in
+            <Link className="text-blue-900" href={"/auth/signup"}>
+             Sign up
             </Link>
           </small>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Signup;
+export default Login

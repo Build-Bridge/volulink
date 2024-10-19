@@ -13,7 +13,7 @@ interface AuthButtonProp {
 const AuthButton: React.FC<AuthButtonProp> = ({icon, text, textColor, bgColor}) => {
 
   const buttonClasses = twMerge(
-    `w-full text-center font-semibold leading-4 p-[13px] rounded-md flex items-center justify-center gap-3 cursor-pointer`,
+    `w-full text-center font-semibold leading-4 p-[15px] rounded-md flex items-center justify-center gap-3 cursor-pointer`,
     icon ? 'bg-transparent border border-[#00030A52]' : bgColor,
     textColor
   );

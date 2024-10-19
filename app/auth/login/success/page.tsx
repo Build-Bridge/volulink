@@ -1,10 +1,10 @@
-import Signup from '@/components/Auth/Signup'
+import Success from '@/components/Auth/Success'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='w-full'>
-      <Signup/>
+    <div>
+        <Success />
     </div>
   )
 }
