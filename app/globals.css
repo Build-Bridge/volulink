@@ -1,7 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.auth-layout{
+  height: calc(100% - 50px);
+}
+
+.bg__overlay{
+  background: rgba(0,0,0,0.6);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
 
 .hero-section {
   @apply  px-4 md:px-[34px] overflow-hidden
