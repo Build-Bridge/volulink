@@ -21,6 +21,7 @@ const AuthLayout: React.FC<AuthLayoutProps> = ({children}) => {
         </div>
       </div>
     </section>
+    
   )
 }
 
