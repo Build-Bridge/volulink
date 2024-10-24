@@ -1,10 +1,10 @@
-import Success from '@/components/Auth/Success'
+import SignupModal from '@/components/Modals/SignupModal'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <Success />
+        <SignupModal />
     </div>
   )
 }
