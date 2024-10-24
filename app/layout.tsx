@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
-
-
+import TopNav from "@/components/Navbar/TopNav";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Volulink",
@@ -15,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={` antialiased`}
+      >
+        <TopNav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -28,3 +28,84 @@ body {
   top: 0;
   left: 0;
 }
+
+.hero-section {
+  @apply  px-4 md:px-[34px] overflow-hidden
+}
+
+.section {
+  @apply  md:px-[50px]
+}
+
+.section-h1 {
+  @apply text-[35px] my-3 font-semibold
+}
+
+.section-p {
+  @apply text-[#00030A99]
+}
+
+/* .how-grid-cols {
+  @apply  rounded-3xl text-white py-4 px-3 flex flex-col gap-48
+} */
+
+.nav {
+  @apply py-[22px] px-[34px]
+}
+
+.btn {
+  @apply rounded-lg px-3 py-1.5 
+}
+
+.nav-active {
+  @apply text-black 
+}
+
+.hero {
+  @apply h-[70vh] relative rounded-xl md:px-20 py-6 grid place-items-center;
+  background-image: url('../components/assets/Hero/heromage.png');
+  background-position: bottom;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom ;
+}
+
+.hero-background .hero-img {
+  @apply w-[100%] h-[100%] object-cover
+}
+
+.hero-text {
+  @apply  z-[1] p-5 text-left;
+}
+
+.hero-text h1 {
+  @apply text-[#fff] text-5xl font-semibold my-2.5
+}
+
+.hero-text p {
+  @apply text-[15px] text-[#ffffffcc];
+}
+
+.text-off {
+  @apply text-[#ffffffcc]
+}
+
+.text-off-black {
+  @apply text-[#00030A99]
+}
+
+.how {
+  @apply max-md:flex max-md:gap-3 overflow-x-scroll md:grid md:grid-cols-[4fr__1fr__4fr__1fr__4fr] items-center;
+  scrollbar-width: none;
+}
+
+.how-grid-cols {
+  @apply max-md:min-w-[240px] rounded-3xl text-white py-4 px-3 flex flex-col gap-40
+}
