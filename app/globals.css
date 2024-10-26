@@ -63,7 +63,8 @@ body {
 
 .hero {
   @apply h-[70vh] relative rounded-xl md:px-20 py-6 grid place-items-center;
-  background-image: url('../components/assets/Hero/heromage.png');
+  /* background-image: url('../components/assets/Hero/heromage.png'); */
+  background-image: url('/img/heromage.png');
   background-position: bottom;
 }
 
