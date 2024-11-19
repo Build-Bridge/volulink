@@ -12,7 +12,7 @@ const JobModal = () => {
 
       <div className='p-2'>
       {Array.from({ length: 20 }).map((_, index) => (
-        <div className='text-[#00030AA3] border-y border-[#00030A14] py-1 my-1'>
+        <div key={index} className='text-[#00030AA3] border-y border-[#00030A14] py-1 my-1'>
           <p className='font-medium text-[14px] leading-[21px]'>UI/<span className='font-normal'>Ux Designer </span></p>
           <small>Lagos, Nigeria</small>
         </div>
