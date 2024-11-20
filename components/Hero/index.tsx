@@ -3,6 +3,8 @@ import Image from "next/image";
 import hero from "@/assets/image/heroImage.png";
 import { HeroItems } from "../Constant";
 import { IoIosSearch } from "react-icons/io";
+import SearchModal from "../Modals/SearchModal";
+import JobModal from "../Modals/JobModal";
 
 const Hero = () => {
   return (
@@ -12,14 +14,20 @@ const Hero = () => {
           <div className="hero-text">
             <h1>{HeroItems?.title}</h1>
             <p>{HeroItems?.content}</p>
+            <div className="relative">
             <div className="bg-white my-8 w-fit rounded-xl p-0.5 flex justify-between items-center">
               <IoIosSearch size={25} className="mx-1.5"/>
               <input type="text" className="h-full border-0 outline-0 text-black" placeholder="Find volunteer opportunity"/>
               <button className="btn bg-black text-white py-2 font-bold">Search</button>
             </div>
+            <div className="">
+                <SearchModal/>
+              </div>
+            </div>
           </div>
-          <div className="">.</div>
+          <div className="bg__overlay flex justify-center"><JobModal/></div>
         </div>
+
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ body {
 }
 
 .hero-section {
-  @apply  px-4 md:px-[34px] overflow-hidden
+  @apply  px-4 md:px-[34px] overflow-visible
 }
 
 .section {
