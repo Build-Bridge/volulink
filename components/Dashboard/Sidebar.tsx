@@ -40,7 +40,7 @@ const Sidebar = () => {
         }
     ]
   return (
-  <aside className={`bg-[#00030A14] min-h-dvh rounded-2xl p-4 flex flex-col justify-between gap-10 ${expand ? 'w-[200px] transition-all duration-200' : 'w-[60px] items-center transition-all duration-200'}`}>
+  <aside className={`bg-[#00030A14] min-h-[25%] rounded-2xl p-4 flex flex-col justify-between gap-10 ${expand ? 'w-[200px] transition-all duration-200' : 'w-[60px] items-center transition-all duration-200'}`}>
     <div>
         <FaBars className='cursor-pointer' onClick={handleExpand} size={30}/>
     </div>
