@@ -19,6 +19,7 @@ body {
   height: calc(100% - 50px);
 }
 
+
 .bg__overlay{
   background: rgba(0,0,0,0.6);
   height: 100vh;

@@ -3,8 +3,10 @@ import Link from "next/link";
 import React, {useState} from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { LuMenu } from "react-icons/lu";
+import { useRouter } from "next/navigation";
 
 const TopNav = () => {
+  const router = useRouter()
   const [active,setActive] = useState<number>(0);
   const [mobileNav,setMobileNav] = useState<boolean>(false);
 
@@ -30,10 +32,10 @@ const TopNav = () => {
       ))}
       </ul>
       <div className="flex gap-2 max-md:hidden">
-        <button className="btn outline outline-1 outline-black ">
+        <button onClick={() => router.push('/auth/login')} className="btn outline outline-1 outline-black ">
           Sign in
         </button>
-        <button className="btn bg-black text-white py-2">Sign up</button>
+        <button onClick={() => router.push('/auth/signup')} className="btn bg-black text-white py-2">Sign up</button>
       </div>
 
       <div className="md:hidden">
@@ -45,10 +47,10 @@ const TopNav = () => {
           </li>
         ))}
 
-          <button className="btn outline outline-1 outline-black ">
+          <button onClick={() => router.push('/auth/login')} className="btn outline outline-1 outline-black ">
             Sign in
           </button>
-          <button className="btn bg-black text-white py-2.5">Sign up</button>
+          <button onClick={() => router.push('/auth/signup')} className="btn bg-black text-white py-2.5">Sign up</button>
         </ul>
       </div>
     </div>
