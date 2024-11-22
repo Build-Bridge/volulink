@@ -1,7 +1,9 @@
 'use client'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FaBars, FaHeartCrack, FaBook, FaComment, FaUser, FaGear } from 'react-icons/fa6'
+import { LuHeartHandshake, LuUserCircle2 } from "react-icons/lu";
+import { GoOrganization, GoCommentDiscussion, GoGear } from "react-icons/go";
+import { CiMenuBurger } from "react-icons/ci";
 
 const Sidebar = () => {
     const [expand, setExpand] = useState(false)
@@ -13,17 +15,17 @@ const Sidebar = () => {
         {
             route: '/',
             name: 'Volunteer',
-            icon: <FaHeartCrack size={20}/>
+            icon: <LuHeartHandshake size={20}/>
         },
         {
             route: '/',
             name: 'Organisation',
-            icon: <FaBook size={20}/>
+            icon: <GoOrganization size={20}/>
         },
         {
             route: '/',
             name: 'Commmunity',
-            icon: <FaComment size={20}/>
+            icon: <GoCommentDiscussion size={20}/>
         }
     ]
 
@@ -31,18 +33,18 @@ const Sidebar = () => {
         {
             route: '/',
             name: 'Your data',
-            icon: <FaUser size={20}/>
+            icon: <LuUserCircle2 size={20}/>
         },
         {
             route: '/',
             name: 'Settings',
-            icon: <FaGear size={20}/>
+            icon: <GoGear size={20}/>
         }
     ]
   return (
   <aside className={`bg-[#00030A14] min-h-[25%] rounded-2xl p-4 flex flex-col justify-between gap-10 ${expand ? 'w-[200px] transition-all duration-200' : 'w-[60px] items-center transition-all duration-200'}`}>
     <div>
-        <FaBars className='cursor-pointer' onClick={handleExpand} size={30}/>
+        <CiMenuBurger className='cursor-pointer' onClick={handleExpand} size={30}/>
     </div>
 
     <div className='flex flex-col gap-4 flex-1'>

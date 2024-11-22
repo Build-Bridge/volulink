@@ -14,7 +14,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({children}) => {
         <Nav/>
       </div>
      <div className='flex gap-5 p-5 min-h-full'>
-        <div className='static top-[80px] max-h-[25%] left-0 z-20'> 
+        <div className='static top-[80px] max-h-[25%] left-0 z-20 hidden md:block'> 
             <Sidebar/>
         </div>
         <div className='flex-1'>{children}</div>

@@ -7,8 +7,8 @@ const Dashboard = () => {
   return (
   <section className='max-w-screen-lg'>
     <div className='flex items-center justify-between'>
-      <h3 className='font-semibold text-[18px] leading-[27px]'>Volunteers you might like</h3>
-      <button className='bg-black py-2 px-5 rounded-lg text-white capitalize'>Post volunteer Opportunity</button>
+      <h3 className='font-semibold text-[14px] leading-[27px] text-nowrap md:text-[18px]'>Volunteers you might like</h3>
+      <button className='bg-black py-2 px-3 rounded-lg text-white capitalize text-[14px] text-nowrap md:text-[16px]'>Post volunteer Opportunity</button>
     </div>
 
 {/* Tabs */}
@@ -25,9 +25,9 @@ const Dashboard = () => {
     {  Array.from({length: 10}).map((_,index) => (
       <div className='flex gap-2 items-start border-t border-[#CDCDCD] p-3' key={index}>
         <div>
-        <Image src={'/img/Avatar.svg'} alt='profile' priority width={50} height={50} />
+        <Image src={'/img/Avatar.svg'} className='md:w-[50px] md:h-[50px]' alt='profile' priority width={300} height={300} />
         </div>
-        <div>
+        <div className='flex-1'>
           <h3 className='font-normal leading-5 text-[#00030AA3]'>Nuel Uchenna</h3>
           <h1 className='font-semibold text-[18px] leading-6'>Community Outreach Coordinator</h1>
           <small className='text-[#00030AA3] font-medium leading-6'>Lagos, LA</small>
