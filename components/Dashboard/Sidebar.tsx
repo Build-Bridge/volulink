@@ -1,9 +1,8 @@
 'use client'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { LuHeartHandshake, LuUserCircle2 } from "react-icons/lu";
-import { GoOrganization, GoCommentDiscussion, GoGear } from "react-icons/go";
 import { CiMenuBurger } from "react-icons/ci";
+import {account, nav_links} from '../Constant/index'
 
 const Sidebar = () => {
     const [expand, setExpand] = useState(false)
@@ -11,38 +10,9 @@ const Sidebar = () => {
     const handleExpand = () => {
         setExpand(prev => !prev)
     }
-    const nav_links = [
-        {
-            route: '/',
-            name: 'Volunteer',
-            icon: <LuHeartHandshake size={20}/>
-        },
-        {
-            route: '/',
-            name: 'Organisation',
-            icon: <GoOrganization size={20}/>
-        },
-        {
-            route: '/',
-            name: 'Commmunity',
-            icon: <GoCommentDiscussion size={20}/>
-        }
-    ]
 
-    const account = [
-        {
-            route: '/',
-            name: 'Your data',
-            icon: <LuUserCircle2 size={20}/>
-        },
-        {
-            route: '/',
-            name: 'Settings',
-            icon: <GoGear size={20}/>
-        }
-    ]
   return (
-  <aside className={`bg-[#00030A14] min-h-[25%] rounded-2xl p-4 flex flex-col justify-between gap-10 ${expand ? 'w-[200px] transition-all duration-200' : 'w-[60px] items-center transition-all duration-200'}`}>
+  <aside className={`bg-[#00030A14] min-h-[25%] rounded-2xl p-4 flex flex-col justify-between gap-10  ${expand ? 'w-[200px] transition-all duration-200' : 'w-[60px] items-center transition-all duration-200'}`}>
     <div>
         <CiMenuBurger className='cursor-pointer' onClick={handleExpand} size={30}/>
     </div>

@@ -25,7 +25,7 @@ const Dashboard = () => {
     {  Array.from({length: 10}).map((_,index) => (
       <div className='flex gap-2 items-start border-t border-[#CDCDCD] p-3' key={index}>
         <div>
-        <Image src={'/img/Avatar.svg'} className='md:w-[50px] md:h-[50px]' alt='profile' priority width={300} height={300} />
+        <Image src={'/img/Avatar.svg'} className='md:w-[50px] md:h-[50px]' alt='profile' priority width={50} height={50} />
         </div>
         <div className='flex-1'>
           <h3 className='font-normal leading-5 text-[#00030AA3]'>Nuel Uchenna</h3>
