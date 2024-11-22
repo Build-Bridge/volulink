@@ -20,12 +20,12 @@ const Hero = () => {
               <input type="text" className="h-full border-0 outline-0 text-black" placeholder="Find volunteer opportunity"/>
               <button className="btn bg-black text-white py-2 font-bold">Search</button>
             </div>
-            <div className="">
+            {/* <div className="">
                 <SearchModal/>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="bg__overlay flex justify-center"><JobModal/></div>
+          {/* <div className="bg__overlay flex justify-center"><JobModal/></div> */}
         </div>
 
       </div>
